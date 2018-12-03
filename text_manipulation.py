@@ -1,6 +1,7 @@
 import nltk as nl
 import pyaudio
 import smart_mirror as sm
+from pygame import mixer
 import numpy as np
 import time
 text = "come to the club, it will be fun dark outside"
@@ -50,6 +51,8 @@ def remove_noise(self):
 
 def wake_word_detection():
     waiting = True
+    mixer.init()
+    mixer.music.load("Start_tone.mp3")
     print("-------------------------------------------------")
     print("Wake word detection initiated")
     while waiting:
@@ -57,13 +60,13 @@ def wake_word_detection():
         wake_word = sm.record_audio()
         print("Checking wake word")
         # print(str(wake_word))
-        if wake_word == "hi":
+        if wake_word == "mirror mirror":
             print("Said")
             if sm.interactions == 0:
-                sm.speak("Hello, What can I do for you ?")
+                mixer.music.play()
                 sm.interactions += 1
             else:
-                sm.speak("Hello again, what can I do for you?")
+                mixer.music.play()
                 sm.interactions += 1
             waiting = False
 
@@ -75,8 +78,15 @@ def heard():
     print("-------------------------------------------------")
     print("Heard initiated")
 
+    # Keep count of the number of times the program loops for a request
+    tries = 0
+
+    # Once it tries up tp this limit the program will go back to waiting for the Wake word
+    tries_limit = 5
+
     while request_not_received:
         print("recording request")
+        print("Try number: " + str(tries))
         data = sm.record_audio()
         if data is not None:
             print("The users request was: " + str(data))
@@ -84,13 +94,26 @@ def heard():
             found = sm.mirror_mirror(data)
             if found:
                 request_not_received = False
-            #else:
-             #   sm.speak("Could not find an answer for you! Please try Again")
-              #  request_not_received = True
+
+            else:
+                if tries == tries_limit:
+                    break
+                tries += 1
+        else:
+            if tries == tries_limit:
+                break
+            tries += 1
 
     print("2 second sleep")
     time.sleep(2)
-    print("User request has been dealt with, now back to waiting for wake word")
+    if tries == tries_limit:
+        sm.speak("Sorry I can't help you with that! Please try again later")
+    else:
+        print("User request has been dealt with, now back to waiting for wake word")
+
+    mixer.init()
+    mixer.music.load("Closing_tone.mp3")
+    mixer.music.play()
     wake_word_detection()
 
 

@@ -57,6 +57,8 @@ def record_audio():
 
     try:
         with sr.Microphone() as source:
+            print("Listening to user")
+            r.adjust_for_ambient_noise(source)
             data = r.recognize_google(r.listen(source))
             # print("Data in record_audio: " + str(data))
     except sr.UnknownValueError:
@@ -81,7 +83,7 @@ def mirror_mirror(self):
     # if "Mirror Mirror" in data:
     #  speak("Yes, sir ?")
     if "what is your name" in request:
-        speak("You can call me, Mirror Mirror")
+        speak("You can call me, Mirror, Mirror")
         found = True
 
     elif "where do you live" in request:
@@ -90,7 +92,7 @@ def mirror_mirror(self):
 
     elif "how are you" in request:
         print("Found request, now responding")
-        speak("I am fine")
+        speak("I am fine, thank you")
         found = True
 
     elif "what time is it" in request:

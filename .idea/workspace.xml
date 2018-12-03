@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smart_mirror.py" beforeDir="false" afterPath="$PROJECT_DIR$/smart_mirror.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text_manipulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/text_manipulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/SpeechRecognition-3.8.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/SpeechRecognition-3.8.1.dist-info/RECORD" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Smart_Mirror_AI_Assistant$text_manipulation.coverage" NAME="text_manipulation Coverage Results" MODIFIED="1543856598289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Smart_Mirror_AI_Assistant$text_manipulation.coverage" NAME="text_manipulation Coverage Results" MODIFIED="1543862568786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="2057416159">
@@ -35,7 +34,7 @@
         <counts>
           <entry key="RECORD" value="1" />
           <entry key="WHEEL" value="1" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="pth" value="2" />
           <entry key="py" value="16" />
           <entry key="txt" value="1" />
@@ -43,32 +42,34 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="Python" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="7869" />
-          <entry key="txt" value="56" />
+          <entry key="md" value="2" />
+          <entry key="py" value="8594" />
+          <entry key="txt" value="198" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="56" />
-          <entry key="Python" value="7869" />
+          <entry key="Markdown" value="2" />
+          <entry key="PLAIN_TEXT" value="198" />
+          <entry key="Python" value="8594" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/text_manipulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="80" column="10" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
+            <state relative-caret-position="930">
+              <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -76,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/smart_mirror.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-880">
-              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+            <state relative-caret-position="333">
+              <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -104,6 +105,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/venv/smart_mirror.py" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/smart_mirror.py" />
         <option value="$PROJECT_DIR$/text_manipulation.py" />
       </list>
@@ -230,7 +232,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541877287644</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Basic setup is working! Only simple requests, nothing to do with locations, people or applications yet.">
+      <created>1543856690731</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543856690731</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated ReadMe">
+      <created>1543859655312</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1543859655312</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -270,7 +286,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Voice recognition work!! Need to work on speed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Voice recognition work!! Need to work on speed" />
+    <MESSAGE value="Basic setup is working! Only simple requests, nothing to do with locations, people or applications yet." />
+    <MESSAGE value="Updated ReadMe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated ReadMe" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pyaudio.py">
@@ -372,22 +390,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text_manipulation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="80" column="10" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smart_mirror.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-880">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+        <state relative-caret-position="333">
+          <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text_manipulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
