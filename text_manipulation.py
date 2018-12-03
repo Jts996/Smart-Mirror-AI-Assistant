@@ -45,32 +45,54 @@ def remove_noise(self):
     return noise_free_text
 
 
+""" This Function is used to decide whether the user has said the required wake word"""
+
+
 def wake_word_detection():
     waiting = True
+    print("-------------------------------------------------")
+    print("Wake word detection initiated")
     while waiting:
+        print("Waiting for wake word")
         wake_word = sm.record_audio()
+        print("Checking wake word")
+        # print(str(wake_word))
         if wake_word == "hi":
+            print("Said")
             if sm.interactions == 0:
-                sm.speak("Hello, What I do for you ?")
+                sm.speak("Hello, What can I do for you ?")
                 sm.interactions += 1
-                heard()
             else:
-                sm.speak("Hello again, what can I do ?")
+                sm.speak("Hello again, what can I do for you?")
                 sm.interactions += 1
-                heard()
+            waiting = False
+
+    heard()
 
 
 def heard():
     request_not_received = True
-    data = ""
+    print("-------------------------------------------------")
+    print("Heard initiated")
+
     while request_not_received:
+        print("recording request")
         data = sm.record_audio()
         if data is not None:
-            request_not_received = False
+            print("The users request was: " + str(data))
+            print("Finding response to user request")
+            found = sm.mirror_mirror(data)
+            if found:
+                request_not_received = False
+            #else:
+             #   sm.speak("Could not find an answer for you! Please try Again")
+              #  request_not_received = True
 
-    sm.mirror_mirror(data)
+    print("2 second sleep")
     time.sleep(2)
+    print("User request has been dealt with, now back to waiting for wake word")
     wake_word_detection()
+
 
 wake_word_detection()
 
