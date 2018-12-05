@@ -1,10 +1,11 @@
-from google.cloud import speech as speech
 from google.cloud import texttospeech
 from google.oauth2 import service_account
 import speech_recognition as sr
 from pygame import mixer
-import subprocess
+import time
+import webbrowser
 import os
+import sys
 
 
 # To track how many interactions the user has had with the system
@@ -22,8 +23,10 @@ voice = texttospeech.types.cloud_tts_pb2.VoiceSelectionParams(
 )
 
 
+""" Method to deal with turning the text response into an audio file for the user feedback """
+
+
 def speak(self):
-    print(self)
     response_text = self
     # Create The text-to-speech client with the required credentials
     client = texttospeech.TextToSpeechClient(credentials=GOOGLE_CLOUD_CRED)
@@ -52,13 +55,15 @@ def speak(self):
     mixer.music.play()
 
 
+""" Method to deal with the speech recognition """
+
+
 def record_audio():
     r = sr.Recognizer()
 
     try:
         with sr.Microphone() as source:
             print("Listening to user")
-            r.adjust_for_ambient_noise(source)
             data = r.recognize_google(r.listen(source))
             # print("Data in record_audio: " + str(data))
     except sr.UnknownValueError:
@@ -71,13 +76,16 @@ def record_audio():
     return data
 
 
+""" Method to deal with finding and deciding what to do with the users request """
+
+
 def mirror_mirror(self):
 
     print("-------------------------------------------------")
     print("Finding response in mirror")
 
     request = self
-    CHROME = os.path.join('Applications/', 'Google Chrome.app')
+    chrome_path = 'open -a /Applications/Google\ Chrome.app %s'
     google_chrome = 'Google Chrome'
 
     # if "Mirror Mirror" in data:
@@ -95,8 +103,38 @@ def mirror_mirror(self):
         speak("I am fine, thank you")
         found = True
 
-    elif "what time is it" in request:
-        speak(time.localtime(time.time()))
+    elif "what time" in request:
+        t = time.localtime(time.time())
+        hour = t[3]
+        minute = t[4]
+
+        # After half past changes "too" the next hour
+        if minute > 30:
+            minute = 60 - t[4]
+            # Afternoon
+            if 12 < hour < 17:
+                hour = hour - 12
+                speak("It is " + str(minute) + " minutes too " + str(hour) + " in the afternoon")
+            # Evening
+            elif 17 <= hour < 24:
+                hour = hour - 12
+                speak("It is " + str(minute) + " minutes too " + str(hour) + " in the evening")
+            # Morning
+            else:
+                speak("It is " + str(minute) + " minutes too " + str(hour) + " in the morning")
+        # Before half past changes to "past" the previous hour
+        else:
+            # Afternoon
+            if hour > 12:
+                hour = hour - 12
+                speak("It is " + str(minute) + " minutes past " + str(hour) + " in the afternoon")
+            # Evening
+            elif 17 <= hour < 24:
+                hour = hour - 12
+                speak("It is " + str(minute) + " minutes past " + str(hour) + " in the evening")
+            # Morning
+            else:
+                speak("It is " + str(minute) + " minutes past " + str(hour) + " in the morning")
         found = True
 
     elif "who is" in self:
@@ -109,18 +147,23 @@ def mirror_mirror(self):
     elif "where is" in request:
         data = self.split(" ")
         location = data[2]
-        speak("Hold on, I will show you where " + location + " is.")
-        os.system('killall ' + google_chrome)
-        subprocess.call([CHROME, "https://www.google.nl/maps/place/" + location + "/&amp;"])
+        speak("Hold on, here is what I have found for you")
+        url = "https://www.google.nl/maps/place/" + location + "/&amp;"
+        webbrowser.get(chrome_path).open(url)
         found = True
 
     elif "open" in request:
         data = self.split(" ")
         application = data[1]
-        speak("Hold on, I will show you " + application)
-        os.system('killall ' + google_chrome)
-        subprocess.call([CHROME, "https://www." + application + ".com"])
+        speak("Hold on, Here is what I have found for you")
+        url = "https://www." + application + ".com"
+        webbrowser.get(chrome_path).open(url)
         found = True
+
+    elif "turn off" in request:
+        speak("Good bye")
+        time.sleep(5)
+        sys.exit(0)
 
     else:
         found = False

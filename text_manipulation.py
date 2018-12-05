@@ -1,6 +1,7 @@
 import nltk as nl
 import pyaudio
 import smart_mirror as sm
+import threading
 from pygame import mixer
 import numpy as np
 import time
@@ -92,9 +93,16 @@ def heard():
             print("The users request was: " + str(data))
             print("Finding response to user request")
             found = sm.mirror_mirror(data)
+
+            # Sleep to wait on the return of the find response to the user and to respond
+            # Then continue on
+            print("5 second sleep")
+            time.sleep(5)
             if found:
                 request_not_received = False
 
+            # Try up too receive user input and/or find the response up to limited number
+            # If it reaches this limit, reset back to wake_word_detection
             else:
                 if tries == tries_limit:
                     break
@@ -104,8 +112,6 @@ def heard():
                 break
             tries += 1
 
-    print("2 second sleep")
-    time.sleep(2)
     if tries == tries_limit:
         sm.speak("Sorry I can't help you with that! Please try again later")
     else:
@@ -114,9 +120,9 @@ def heard():
     mixer.init()
     mixer.music.load("Closing_tone.mp3")
     mixer.music.play()
+
     wake_word_detection()
 
 
 wake_word_detection()
-
 
