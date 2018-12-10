@@ -1,11 +1,12 @@
 from google.cloud import texttospeech
 from google.oauth2 import service_account
 import speech_recognition as sr
-from pygame import mixer
 import time
+from threading import Thread
+from pygame import mixer
 import webbrowser
-import os
 import sys
+import text_manipulation
 
 
 # To track how many interactions the user has had with the system
@@ -23,10 +24,29 @@ voice = texttospeech.types.cloud_tts_pb2.VoiceSelectionParams(
 )
 
 
+def start():
+    mixer.init()
+    mixer.music.load("Start_tone.mp3")
+    mixer.music.play()
+
+
+def end():
+    mixer.init()
+    mixer.music.load("Closing_tone.mp3")
+    mixer.music.play()
+
+
+def alert():
+    mixer.init()
+    mixer.music.load('alarm.mp3')
+    mixer.music.play()
+
+
 """ Method to deal with turning the text response into an audio file for the user feedback """
 
 
 def speak(self):
+
     response_text = self
     # Create The text-to-speech client with the required credentials
     client = texttospeech.TextToSpeechClient(credentials=GOOGLE_CLOUD_CRED)
@@ -85,11 +105,16 @@ def mirror_mirror(self):
     print("Finding response in mirror")
 
     request = self
-    chrome_path = 'open -a /Applications/Google\ Chrome.app %s'
-    google_chrome = 'Google Chrome'
+    found = False
+    print(str(request))
 
-    # if "Mirror Mirror" in data:
-    #  speak("Yes, sir ?")
+    # intents, objs = text_manipulation.remove_noise(request)
+    # print(intents)
+    # print(objs)
+
+    # Path to chrome browser in MacOS
+    chrome_path = 'open -a /Applications/Google\ Chrome.app %s'
+
     if "what is your name" in request:
         speak("You can call me, Mirror, Mirror")
         found = True
@@ -98,53 +123,69 @@ def mirror_mirror(self):
         speak("In your heart.")
         found = True
 
-    elif "how are you" in request:
+    elif "how" in request:
         print("Found request, now responding")
         speak("I am fine, thank you")
         found = True
 
-    elif "what time" in request:
-        t = time.localtime(time.time())
-        hour = t[3]
-        minute = t[4]
+    elif "what" in request:
 
-        # After half past changes "too" the next hour
-        if minute > 30:
-            minute = 60 - t[4]
-            # Afternoon
-            if 12 < hour < 17:
-                hour = hour - 12
-                speak("It is " + str(minute) + " minutes too " + str(hour) + " in the afternoon")
-            # Evening
-            elif 17 <= hour < 24:
-                hour = hour - 12
-                speak("It is " + str(minute) + " minutes too " + str(hour) + " in the evening")
-            # Morning
+        from my_time import Times
+
+        if "time" in request:
+
+            response = Times.current_time()
+            speak(response)
+            found = True
+
+        elif "date" in request:
+
+            response = Times.current_date()
+            speak(response)
+            found = True
+
+    elif "set" or "start" in request:
+        print(str(len(request)))
+        from my_time import Timer
+
+        if "timer" in request:
+            print("Timer initialisation")
+            word = 0
+            if "minutes" in request:
+                position = request.index("minutes")
+                print("Converting minutes")
+                t = int(request[position-2])
+                print(str(t))
+                response = "Starting a timer for " + str(t) + " minutes"
+                speak(response)
+                sec = t * 60
+                thread_timer = Thread(target=Timer.tim,
+                                      args=[sec])
+                thread_timer.start()
+
+            elif "seconds" in request:
+                position = request.index("seconds")
+                print(str(position))
+                print("seconds")
+                sec = int(request[position - 2])
+                response = "Starting a timer for " + str(sec) + " seconds"
+                speak(response)
+                thread_timer = Thread(target=Timer.tim,
+                                      args=[sec])
+                thread_timer.start()
             else:
-                speak("It is " + str(minute) + " minutes too " + str(hour) + " in the morning")
-        # Before half past changes to "past" the previous hour
-        else:
-            # Afternoon
-            if hour > 12:
-                hour = hour - 12
-                speak("It is " + str(minute) + " minutes past " + str(hour) + " in the afternoon")
-            # Evening
-            elif 17 <= hour < 24:
-                hour = hour - 12
-                speak("It is " + str(minute) + " minutes past " + str(hour) + " in the evening")
-            # Morning
-            else:
-                speak("It is " + str(minute) + " minutes past " + str(hour) + " in the morning")
+                word += 1
         found = True
+        return found
 
-    elif "who is" in self:
+    # NEED TO FIX: DOES NOT WORK
+    elif "who" in request:
         data = self.split(" ")
         name = data[2]
         speak("Hold on, I'm finding information about " + name)
-        os.system('killall ' + google_chrome)
         found = True
 
-    elif "where is" in request:
+    elif "where" in request: # Close screen option
         data = self.split(" ")
         location = data[2]
         speak("Hold on, here is what I have found for you")
