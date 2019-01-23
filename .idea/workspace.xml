@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e873c8ef-f4fb-4f7c-a115-7dd5d7f9c3be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Mirror_Mirror.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/listening.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_time.py" afterDir="false" />
+    <list default="true" id="e873c8ef-f4fb-4f7c-a115-7dd5d7f9c3be" name="Default Changelist" comment="Added timer capabilities, Only handles basic single digit inputs for minutes and seconds. Will further develop this after demo">
+      <change afterPath="$PROJECT_DIR$/my_weather.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smart_mirror.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assistant_responses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assistant_responses.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assistant_responses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mirror_Mirror.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror_Mirror.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listening.py" beforeDir="false" afterPath="$PROJECT_DIR$/listening.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_time.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text_manipulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/text_manipulation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,21 +18,25 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Smart_Mirror_AI_Assistant$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1547069103355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Smart_Mirror_AI_Assistant$text_manipulation.coverage" NAME="text_manipulation Coverage Results" MODIFIED="1544126526191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="2057416159">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="3" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -40,7 +46,7 @@
           <entry key="json" value="1" />
           <entry key="md" value="3" />
           <entry key="pth" value="2" />
-          <entry key="py" value="20" />
+          <entry key="py" value="29" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -49,22 +55,22 @@
           <entry key="JSON" value="1" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="20" />
+          <entry key="Python" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="41" />
           <entry key="md" value="2" />
-          <entry key="py" value="19287" />
-          <entry key="txt" value="330" />
+          <entry key="py" value="28630" />
+          <entry key="txt" value="465" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="371" />
-          <entry key="Python" value="19287" />
+          <entry key="PLAIN_TEXT" value="506" />
+          <entry key="Python" value="28630" />
         </counts>
       </usages-collector>
     </session>
@@ -74,11 +80,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text_manipulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="995">
-              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+            <state relative-caret-position="879">
+              <caret line="105" selection-start-line="105" selection-end-line="105" />
               <folding>
-                <element signature="e#32#49#0" expanded="true" />
-                <marker date="1544389429706" expanded="true" signature="1905:2883" ph="..." />
+                <element signature="e#32#60#0" expanded="true" />
+                <marker date="1547299962642" expanded="true" signature="182:187" ph="..." />
+                <marker date="1547299962642" expanded="true" signature="2022:2998" ph="..." />
               </folding>
             </state>
           </provider>
@@ -87,12 +94,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assistant_responses.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="172" column="47" selection-start-line="172" selection-start-column="47" selection-end-line="172" selection-end-column="47" />
+            <state relative-caret-position="15">
+              <caret line="124" column="8" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="8" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
-                <marker date="1544452430024" expanded="true" signature="807:980" ph="..." />
-                <marker date="1544452430024" expanded="true" signature="903:980" ph="..." />
+                <marker date="1548094001685" expanded="true" signature="839:1012" ph="..." />
+                <marker date="1548094001685" expanded="true" signature="935:1012" ph="..." />
               </folding>
             </state>
           </provider>
@@ -101,30 +108,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_time.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+            <state relative-caret-position="120">
+              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
-                <marker date="1544452537983" expanded="true" signature="77:78" ph="..." />
-                <marker date="1544452537983" expanded="true" signature="77:101" ph="..." />
+                <marker date="1548094888662" expanded="true" signature="59:60" ph="..." />
+                <marker date="1548094888662" expanded="true" signature="59:83" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my_weather.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <marker date="1548091073495" expanded="true" signature="40:41" ph="..." />
+                <marker date="1548091073495" expanded="true" signature="40:64" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mirror_Mirror.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+            <state relative-caret-position="384">
+              <caret line="105" column="26" lean-forward="true" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="26" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
-                <marker date="1544453537281" expanded="true" signature="137:139" ph="..." />
-                <marker date="1544453537281" expanded="true" signature="139:143" ph="..." />
-                <marker date="1544453537281" expanded="true" signature="179:257" ph="..." />
-                <marker date="1544453537281" expanded="true" signature="476:480" ph="..." />
-                <marker date="1544453537281" expanded="true" signature="493:494" ph="..." />
-                <marker date="1544453537281" expanded="true" signature="524:529" ph="..." />
+                <marker date="1548165197928" expanded="true" signature="562:566" ph="..." />
+                <marker date="1548165197928" expanded="true" signature="1822:3177" ph="..." />
               </folding>
             </state>
           </provider>
@@ -133,11 +149,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/listening.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+            <state relative-caret-position="540">
+              <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
+                <marker date="1548095042252" expanded="true" signature="448:449" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://$PROJECT_DIR$/venv/lib/python3.7/site-packages/setuptools-39.1.0-py3.7.egg!/easy_install.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -163,10 +194,12 @@
         <option value="$PROJECT_DIR$/smart_mirror.py" />
         <option value="$PROJECT_DIR$/GUI.py" />
         <option value="$PROJECT_DIR$/text_manipulation.py" />
+        <option value="$PROJECT_DIR$/my_weather.py" />
         <option value="$PROJECT_DIR$/Assistant_responses.py" />
         <option value="$PROJECT_DIR$/my_time.py" />
         <option value="$PROJECT_DIR$/listening.py" />
         <option value="$PROJECT_DIR$/Mirror_Mirror.py" />
+        <option value="$PROJECT_DIR$/text.py" />
       </list>
     </option>
   </component>
@@ -185,6 +218,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,11 +235,21 @@
               <item name="Smart-Mirror-AI-Assistant" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
+            <path>
+              <item name="Smart-Mirror-AI-Assistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 (Smart-Mirror-AI-Assistant) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="Smart-Mirror-AI-Assistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 (Smart-Mirror-AI-Assistant) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="setuptools-39.1.0-py3.7.egg" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544001569470</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added timer capabilities, Only handles basic single digit inputs for minutes and seconds. Will further develop this after demo">
+      <created>1544453603080</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1544453603080</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -363,7 +414,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.3018598" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.23819743" />
       <window_info id="Structure" order="1" sideWeight="0.50120485" side_tool="true" weight="0.27825466" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -377,15 +428,15 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5107296" side_tool="true" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.15060242" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4892704" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.21204819" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4892704" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="5" side_tool="true" visible="true" weight="0.18526466" />
+      <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="5" side_tool="true" visible="true" weight="0.16237482" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +451,8 @@
     <MESSAGE value="Updated ReadMe" />
     <MESSAGE value="Added sound feedback when user starts interactions" />
     <MESSAGE value="Added finding locations, time and added some comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added finding locations, time and added some comments" />
+    <MESSAGE value="Added timer capabilities, Only handles basic single digit inputs for minutes and seconds. Will further develop this after demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added timer capabilities, Only handles basic single digit inputs for minutes and seconds. Will further develop this after demo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pyaudio.py">
@@ -427,13 +479,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/google_cloud_texttospeech-0.2.0.dist-info/WHEEL">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/venv/lib/python3.7/site-packages/setuptools-39.1.0-py3.7.egg!/easy_install.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/google_auth_httplib2.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -509,64 +554,104 @@
     <entry file="file://$PROJECT_DIR$/venv/pip-selfcheck.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/text_manipulation.py">
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/tkinter/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="995">
-          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+        <state relative-caret-position="150">
+          <caret line="479" selection-start-line="479" selection-end-line="479" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="916" selection-start-line="916" selection-end-line="916" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/__main__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mirror_Mirror.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="105" column="26" lean-forward="true" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="26" />
           <folding>
-            <element signature="e#32#49#0" expanded="true" />
-            <marker date="1544389429706" expanded="true" signature="1905:2883" ph="..." />
+            <element signature="e#0#20#0" expanded="true" />
+            <marker date="1548165197928" expanded="true" signature="562:566" ph="..." />
+            <marker date="1548165197928" expanded="true" signature="1822:3177" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assistant_responses.py">
+    <entry file="file://$PROJECT_DIR$/my_weather.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="172" column="47" selection-start-line="172" selection-start-column="47" selection-end-line="172" selection-end-column="47" />
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
-            <marker date="1544452430024" expanded="true" signature="807:980" ph="..." />
-            <marker date="1544452430024" expanded="true" signature="903:980" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/listening.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
+            <marker date="1548091073495" expanded="true" signature="40:41" ph="..." />
+            <marker date="1548091073495" expanded="true" signature="40:64" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my_time.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+        <state relative-caret-position="120">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
-            <marker date="1544452537983" expanded="true" signature="77:78" ph="..." />
-            <marker date="1544452537983" expanded="true" signature="77:101" ph="..." />
+            <marker date="1548094888662" expanded="true" signature="59:60" ph="..." />
+            <marker date="1548094888662" expanded="true" signature="59:83" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mirror_Mirror.py">
+    <entry file="file://$PROJECT_DIR$/text_manipulation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+        <state relative-caret-position="879">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <marker date="1544453537281" expanded="true" signature="137:139" ph="..." />
-            <marker date="1544453537281" expanded="true" signature="139:143" ph="..." />
-            <marker date="1544453537281" expanded="true" signature="179:257" ph="..." />
-            <marker date="1544453537281" expanded="true" signature="476:480" ph="..." />
-            <marker date="1544453537281" expanded="true" signature="493:494" ph="..." />
-            <marker date="1544453537281" expanded="true" signature="524:529" ph="..." />
+            <element signature="e#32#60#0" expanded="true" />
+            <marker date="1547299962642" expanded="true" signature="182:187" ph="..." />
+            <marker date="1547299962642" expanded="true" signature="2022:2998" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assistant_responses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="124" column="8" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+            <marker date="1548094001685" expanded="true" signature="839:1012" ph="..." />
+            <marker date="1548094001685" expanded="true" signature="935:1012" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listening.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+            <marker date="1548095042252" expanded="true" signature="448:449" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/venv/lib/python3.7/site-packages/setuptools-39.1.0-py3.7.egg!/easy_install.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

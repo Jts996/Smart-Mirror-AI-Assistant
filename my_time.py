@@ -3,10 +3,10 @@ import time
 import datetime
 
 
-class Times(threading.Thread):
+class Times:
 
     @staticmethod
-    def current_time():
+    def current_time(loc):
         t = time.localtime(time.time())
         hour = t[3]
         minute = t[4]
@@ -59,5 +59,5 @@ class Timer(threading.Thread):
         print("Starting timer")
         from Assistant_responses import alert
         time.sleep(seconds)
+        print("Timer has finished")
         alert()
-
