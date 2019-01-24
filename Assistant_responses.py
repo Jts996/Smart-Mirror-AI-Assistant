@@ -112,7 +112,7 @@ def mirror_mirror(self):
     logging_thread = Thread(target=Listening.logging, args=[request])
     logging_thread.start()
     logging_thread.join()
-    
+
     # intents, objs = text_manipulation.remove_noise(request)
     # print(intents)
     # print(objs)
@@ -223,7 +223,7 @@ def mirror_mirror(self):
         speak(response)
         found = True
 
-    elif "where" in request: # Close screen option
+    elif "where" in request:  # Close screen option
         data = self.split(" ")
         location = data[2]
         response = "Hold on, here is what I have found for you"

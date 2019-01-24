@@ -100,6 +100,7 @@ class Listening(threading.Thread):
             print("User request has been dealt with, now back to waiting for wake word")
         time.sleep(2)
         print("Restarting, going back to wait for wake word")
+        end()
         Listening.wake_word_detection()
 
         #speak("Is that everything?")

@@ -1,15 +1,390 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e873c8ef-f4fb-4f7c-a115-7dd5d7f9c3be" name="Default Changelist" comment="Added timer capabilities, Only handles basic single digit inputs for minutes and seconds. Will further develop this after demo">
-      <change afterPath="$PROJECT_DIR$/my_weather.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text.py" afterDir="false" />
+    <list default="true" id="e873c8ef-f4fb-4f7c-a115-7dd5d7f9c3be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assistant_responses.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assistant_responses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mirror_Mirror.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror_Mirror.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/listening.py" beforeDir="false" afterPath="$PROJECT_DIR$/listening.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_time.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text.py" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text_manipulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/text_manipulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk-3.3-py3.7.egg-info/PKG-INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk-3.3-py3.7.egg-info/SOURCES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk-3.3-py3.7.egg-info/dependency_links.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk-3.3-py3.7.egg-info/installed-files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk-3.3-py3.7.egg-info/not-zip-safe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk-3.3-py3.7.egg-info/requires.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk-3.3-py3.7.egg-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/VERSION" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/VERSION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/chartparser_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/chartparser_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/chunkparser_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/chunkparser_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/collocations_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/collocations_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/concordance_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/concordance_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/nemo_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/nemo_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/rdparser_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/rdparser_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/srparser_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/srparser_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/wordfreq_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/wordfreq_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/wordnet_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/app/wordnet_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/book.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/ccg/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/ccg/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/ccg/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/ccg/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/ccg/chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/ccg/chart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/ccg/combinator.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/ccg/combinator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/ccg/lexicon.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/ccg/lexicon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/ccg/logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/ccg/logic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chat/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chat/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chat/eliza.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chat/eliza.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chat/iesha.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chat/iesha.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chat/rude.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chat/rude.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chat/suntsu.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chat/suntsu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chat/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chat/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chat/zen.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chat/zen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chunk/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chunk/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chunk/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chunk/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chunk/named_entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chunk/named_entity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chunk/regexp.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chunk/regexp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chunk/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/chunk/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/decisiontree.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/decisiontree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/maxent.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/maxent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/megam.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/megam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/naivebayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/naivebayes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/positivenaivebayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/positivenaivebayes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/rte_classify.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/rte_classify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/scikitlearn.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/scikitlearn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/senna.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/senna.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/svm.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/svm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/tadm.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/tadm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/textcat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/textcat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/weka.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/classify/weka.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/cluster/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/cluster/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/cluster/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/cluster/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/cluster/em.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/cluster/em.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/cluster/gaac.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/cluster/gaac.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/cluster/kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/cluster/kmeans.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/cluster/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/cluster/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/collections.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/collections.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/collocations.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/collocations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/europarl_raw.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/europarl_raw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/aligned.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/aligned.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/bnc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/bnc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/bracket_parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/bracket_parse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/categorized_sents.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/categorized_sents.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/chasen.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/chasen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/childes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/childes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/chunked.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/chunked.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/cmudict.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/cmudict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/comparative_sents.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/comparative_sents.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/conll.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/conll.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/crubadan.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/crubadan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/dependency.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/dependency.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/framenet.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/framenet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/ieer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/ieer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/indian.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/indian.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/ipipan.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/ipipan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/knbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/knbc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/lin.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/lin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/mte.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/mte.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/nkjp.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/nkjp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/nombank.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/nombank.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/nps_chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/nps_chat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/opinion_lexicon.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/opinion_lexicon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/panlex_lite.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/panlex_lite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/pl196x.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/pl196x.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/plaintext.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/plaintext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/ppattach.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/ppattach.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/propbank.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/propbank.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/pros_cons.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/pros_cons.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/reviews.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/reviews.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/rte.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/rte.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/semcor.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/semcor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/senseval.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/senseval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/sentiwordnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/sentiwordnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/sinica_treebank.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/sinica_treebank.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/string_category.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/string_category.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/switchboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/switchboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/tagged.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/tagged.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/timit.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/timit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/toolbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/toolbox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/twitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/twitter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/udhr.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/udhr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/verbnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/verbnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/wordlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/wordlist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/wordnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/wordnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/xmldocs.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/xmldocs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/ycoe.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/reader/ycoe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/corpus/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/downloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/downloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/draw/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/draw/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/draw/cfg.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/draw/cfg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/draw/dispersion.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/draw/dispersion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/draw/table.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/draw/table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/draw/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/draw/tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/draw/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/draw/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/featstruct.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/featstruct.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/grammar.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/grammar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/help.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/inference/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/inference/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/inference/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/inference/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/inference/discourse.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/inference/discourse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/inference/mace.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/inference/mace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/inference/nonmonotonic.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/inference/nonmonotonic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/inference/prover9.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/inference/prover9.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/inference/resolution.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/inference/resolution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/inference/tableau.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/inference/tableau.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/internals.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/internals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/jsontags.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/jsontags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/lazyimport.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/lazyimport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/agreement.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/agreement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/aline.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/aline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/association.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/association.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/confusionmatrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/confusionmatrix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/distance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/paice.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/paice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/scores.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/scores.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/segmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/segmentation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/spearman.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/metrics/spearman.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/misc/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/misc/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/misc/babelfish.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/misc/babelfish.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/misc/chomsky.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/misc/chomsky.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/misc/minimalset.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/misc/minimalset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/misc/sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/misc/sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/misc/wordfinder.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/misc/wordfinder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/bllip.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/bllip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/chart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/corenlp.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/corenlp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/dependencygraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/dependencygraph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/earleychart.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/earleychart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/evaluate.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/evaluate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/featurechart.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/featurechart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/generate.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/generate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/malt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/malt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/nonprojectivedependencyparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/nonprojectivedependencyparser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/pchart.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/pchart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/projectivedependencyparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/projectivedependencyparser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/recursivedescent.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/recursivedescent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/shiftreduce.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/shiftreduce.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/stanford.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/stanford.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/transitionparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/transitionparser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/viterbi.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/parse/viterbi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/probability.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/probability.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/boxer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/boxer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/chat80.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/chat80.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/cooper_storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/cooper_storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/drt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/drt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/drt_glue_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/drt_glue_demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/evaluate.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/evaluate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/glue.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/glue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/hole.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/hole.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/lfg.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/lfg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/linearlogic.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/linearlogic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/logic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/relextract.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/relextract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/skolemize.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/skolemize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sem/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sentiment/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sentiment/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sentiment/sentiment_analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sentiment/sentiment_analyzer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sentiment/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sentiment/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sentiment/vader.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/sentiment/vader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/arlstem.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/arlstem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/isri.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/isri.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/lancaster.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/lancaster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/porter.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/porter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/regexp.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/regexp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/rslp.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/rslp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/snowball.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/snowball.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/wordnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/stem/wordnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/brill.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/brill.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/brill_trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/brill_trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/crf.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/crf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/hmm.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/hmm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/hunpos.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/hunpos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/mapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/mapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/perceptron.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/perceptron.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/senna.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/senna.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/sequential.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/sequential.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/stanford.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/stanford.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/tnt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/tnt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tag/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tbl/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tbl/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tbl/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tbl/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tbl/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tbl/demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tbl/erroranalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tbl/erroranalysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tbl/feature.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tbl/feature.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tbl/rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tbl/rule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tbl/template.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tbl/template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/all.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/all.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/bnc.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/bnc.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/ccg.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/ccg.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/ccg_semantics.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/ccg_semantics.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/chat80.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/chat80.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/childes_fixt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/childes_fixt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/chunk.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/chunk.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/classify.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/classify.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/classify_fixt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/classify_fixt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/collections.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/collections.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/collocations.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/collocations.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/compat_fixt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/compat_fixt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/concordance.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/concordance.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/corpus.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/corpus.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/corpus_fixt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/corpus_fixt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/crubadan.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/crubadan.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/data.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/data.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/dependency.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/dependency.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/discourse.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/discourse.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/discourse_fixt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/discourse_fixt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/doctest_nose_plugin.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/doctest_nose_plugin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/drt.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/drt.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/featgram.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/featgram.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/featstruct.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/featstruct.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/framenet.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/framenet.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/generate.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/generate.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/gensim.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/gensim.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/gensim_fixt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/gensim_fixt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/gluesemantics.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/gluesemantics.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/gluesemantics_malt.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/gluesemantics_malt.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/grammar.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/grammar.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/grammartestsuites.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/grammartestsuites.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/index.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/index.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/inference.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/inference.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/inference_fixt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/inference_fixt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/internals.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/internals.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/japanese.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/japanese.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/logic.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/logic.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/metrics.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/metrics.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/misc.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/misc.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/nonmonotonic.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/nonmonotonic.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/nonmonotonic_fixt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/nonmonotonic_fixt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/parse.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/parse.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/portuguese_en.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/portuguese_en.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/portuguese_en_fixt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/portuguese_en_fixt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/probability.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/probability.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/probability_fixt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/probability_fixt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/propbank.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/propbank.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/relextract.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/relextract.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/resolution.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/resolution.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/runtests.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/runtests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/segmentation_fixt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/segmentation_fixt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/semantics.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/semantics.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/semantics_fixt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/semantics_fixt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/sentiment.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/sentiment.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/sentiwordnet.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/sentiwordnet.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/simple.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/simple.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/stem.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/stem.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/tag.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/tag.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/tokenize.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/tokenize.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/toolbox.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/toolbox.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/translate.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/translate.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/translate_fixt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/translate_fixt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/tree.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/tree.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/treeprettyprinter.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/treeprettyprinter.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/treetransforms.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/treetransforms.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_2x_compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_2x_compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_aline.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_aline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_chunk.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_chunk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_classify.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_classify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_collocations.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_collocations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_concordance.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_concordance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_corenlp.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_corenlp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_corpora.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_corpora.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_corpus_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_corpus_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_hmm.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_hmm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_json2csv_corpus.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_json2csv_corpus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_naivebayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_naivebayes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_rte_classify.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_rte_classify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_seekable_unicode_stream_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_seekable_unicode_stream_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_senna.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_senna.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_stem.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_stem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_tag.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_tag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_tgrep.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_tgrep.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_tokenize.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_tokenize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_twitter_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_twitter_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_wordnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/test_wordnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_bleu.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_bleu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_gdfa.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_gdfa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_ibm1.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_ibm1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_ibm2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_ibm2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_ibm3.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_ibm3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_ibm4.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_ibm4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_ibm5.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_ibm5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_ibm_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_ibm_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_nist.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_nist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_stack_decoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/translate/test_stack_decoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/unit/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/util.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/util.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/wordnet.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/wordnet.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/wordnet_fixt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/wordnet_fixt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/wordnet_lch.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/wordnet_lch.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/wsd.doctest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/test/wsd.doctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/text.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tgrep.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tgrep.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/casual.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/casual.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/mwe.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/mwe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/nist.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/nist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/punkt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/punkt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/regexp.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/regexp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/repp.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/repp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/sexpr.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/sexpr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/simple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/stanford.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/stanford.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/stanford_segmenter.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/stanford_segmenter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/texttiling.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/texttiling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/toktok.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/toktok.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/treebank.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/treebank.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/toolbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/toolbox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/bleu_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/bleu_score.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/chrf_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/chrf_score.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/gale_church.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/gale_church.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/gdfa.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/gdfa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/gleu_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/gleu_score.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/ibm1.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/ibm1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/ibm2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/ibm2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/ibm3.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/ibm3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/ibm4.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/ibm4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/ibm5.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/ibm5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/ibm_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/ibm_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/nist_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/nist_score.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/phrase_based.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/phrase_based.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/ribes_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/ribes_score.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/stack_decoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/translate/stack_decoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/treeprettyprinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/treeprettyprinter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/treetransforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/treetransforms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/twitter/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/twitter/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/twitter/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/twitter/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/twitter/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/twitter/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/twitter/twitter_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/twitter/twitter_demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/twitter/twitterclient.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/twitter/twitterclient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/twitter/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/twitter/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/wsd.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/wsd.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,36 +416,40 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="PKG-INFO" value="1" />
           <entry key="RECORD" value="1" />
           <entry key="WHEEL" value="1" />
           <entry key="json" value="1" />
-          <entry key="md" value="3" />
+          <entry key="md" value="4" />
           <entry key="pth" value="2" />
-          <entry key="py" value="29" />
-          <entry key="txt" value="1" />
+          <entry key="py" value="36" />
+          <entry key="requirements" value="1" />
+          <entry key="shortcut" value="1" />
+          <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="29" />
+          <entry key="Markdown" value="4" />
+          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="Python" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="41" />
           <entry key="md" value="2" />
-          <entry key="py" value="28630" />
-          <entry key="txt" value="465" />
+          <entry key="py" value="28695" />
+          <entry key="shortcut" value="142" />
+          <entry key="txt" value="836" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="506" />
-          <entry key="Python" value="28630" />
+          <entry key="PLAIN_TEXT" value="1019" />
+          <entry key="Python" value="28695" />
         </counts>
       </usages-collector>
     </session>
@@ -80,12 +459,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text_manipulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="879">
-              <caret line="105" selection-start-line="105" selection-end-line="105" />
+            <state relative-caret-position="390">
+              <caret line="26" column="23" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="23" />
               <folding>
-                <element signature="e#32#60#0" expanded="true" />
-                <marker date="1547299962642" expanded="true" signature="182:187" ph="..." />
-                <marker date="1547299962642" expanded="true" signature="2022:2998" ph="..." />
+                <marker date="1548334838408" expanded="true" signature="1294:2270" ph="..." />
               </folding>
             </state>
           </provider>
@@ -94,12 +471,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assistant_responses.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="124" column="8" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="8" />
+            <state relative-caret-position="2118">
+              <caret line="145" column="42" selection-start-line="145" selection-start-column="42" selection-end-line="145" selection-end-column="42" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
-                <marker date="1548094001685" expanded="true" signature="839:1012" ph="..." />
-                <marker date="1548094001685" expanded="true" signature="935:1012" ph="..." />
+                <marker date="1548334838396" expanded="true" signature="839:1012" ph="..." />
+                <marker date="1548334838396" expanded="true" signature="935:1012" ph="..." />
               </folding>
             </state>
           </provider>
@@ -133,42 +510,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mirror_Mirror.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="105" column="26" lean-forward="true" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-                <marker date="1548165197928" expanded="true" signature="562:566" ph="..." />
-                <marker date="1548165197928" expanded="true" signature="1822:3177" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/listening.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+            <state relative-caret-position="523">
+              <caret line="108" column="9" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
-                <marker date="1548095042252" expanded="true" signature="448:449" ph="..." />
+                <marker date="1548334838403" expanded="true" signature="448:449" ph="..." />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="jar://$PROJECT_DIR$/venv/lib/python3.7/site-packages/setuptools-39.1.0-py3.7.egg!/easy_install.py">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mirror_Mirror.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="14" />
+              <folding>
+                <marker date="1548165197928" expanded="true" signature="562:566" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -193,15 +563,22 @@
         <option value="$PROJECT_DIR$/venv/time.py" />
         <option value="$PROJECT_DIR$/smart_mirror.py" />
         <option value="$PROJECT_DIR$/GUI.py" />
-        <option value="$PROJECT_DIR$/text_manipulation.py" />
         <option value="$PROJECT_DIR$/my_weather.py" />
-        <option value="$PROJECT_DIR$/Assistant_responses.py" />
         <option value="$PROJECT_DIR$/my_time.py" />
-        <option value="$PROJECT_DIR$/listening.py" />
         <option value="$PROJECT_DIR$/Mirror_Mirror.py" />
         <option value="$PROJECT_DIR$/text.py" />
+        <option value="$PROJECT_DIR$/shortcut" />
+        <option value="$PROJECT_DIR$/listening.py" />
+        <option value="$PROJECT_DIR$/text_manipulation.py" />
+        <option value="$PROJECT_DIR$/Assistant_responses.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -212,6 +589,33 @@
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Angular</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>ECMAScript 6 migration aidsJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -233,18 +637,9 @@
             </path>
             <path>
               <item name="Smart-Mirror-AI-Assistant" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="Smart-Mirror-AI-Assistant" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (Smart-Mirror-AI-Assistant) &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="Smart-Mirror-AI-Assistant" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (Smart-Mirror-AI-Assistant) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="setuptools-39.1.0-py3.7.egg" type="462c0819:PsiDirectoryNode" />
+              <item name="Smart-Mirror-AI-Assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -257,9 +652,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -398,7 +797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544453603080</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Updated version">
+      <created>1548247242254</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1548247242254</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -417,6 +823,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.23819743" />
       <window_info id="Structure" order="1" sideWeight="0.50120485" side_tool="true" weight="0.27825466" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785408" weight="0.28674698" />
@@ -452,7 +859,8 @@
     <MESSAGE value="Added sound feedback when user starts interactions" />
     <MESSAGE value="Added finding locations, time and added some comments" />
     <MESSAGE value="Added timer capabilities, Only handles basic single digit inputs for minutes and seconds. Will further develop this after demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added timer capabilities, Only handles basic single digit inputs for minutes and seconds. Will further develop this after demo" />
+    <MESSAGE value="Updated version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated version" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pyaudio.py">
@@ -541,16 +949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/pip-selfcheck.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -575,25 +973,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mirror_Mirror.py">
+    <entry file="jar://$PROJECT_DIR$/venv/lib/python3.7/site-packages/setuptools-39.1.0-py3.7.egg!/EGG-INFO/requires.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/venv/lib/python3.7/site-packages/setuptools-39.1.0-py3.7.egg!/EGG-INFO/PKG-INFO">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shortcut">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="105" column="26" lean-forward="true" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <marker date="1548165197928" expanded="true" signature="562:566" ph="..." />
-            <marker date="1548165197928" expanded="true" signature="1822:3177" ph="..." />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_weather.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/venv/lib/python3.7/site-packages/setuptools-39.1.0-py3.7.egg!/easy_install.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text_manipulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="23" />
           <folding>
-            <marker date="1548091073495" expanded="true" signature="40:41" ph="..." />
-            <marker date="1548091073495" expanded="true" signature="40:64" ph="..." />
+            <marker date="1548334838408" expanded="true" signature="1294:2270" ph="..." />
           </folding>
         </state>
       </provider>
@@ -610,48 +1031,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text_manipulation.py">
+    <entry file="file://$PROJECT_DIR$/my_weather.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="879">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
-            <element signature="e#32#60#0" expanded="true" />
-            <marker date="1547299962642" expanded="true" signature="182:187" ph="..." />
-            <marker date="1547299962642" expanded="true" signature="2022:2998" ph="..." />
+            <marker date="1548091073495" expanded="true" signature="40:41" ph="..." />
+            <marker date="1548091073495" expanded="true" signature="40:64" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assistant_responses.py">
+    <entry file="file://$PROJECT_DIR$/Mirror_Mirror.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="124" column="8" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="8" />
+        <state relative-caret-position="60">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="14" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
-            <marker date="1548094001685" expanded="true" signature="839:1012" ph="..." />
-            <marker date="1548094001685" expanded="true" signature="935:1012" ph="..." />
+            <marker date="1548165197928" expanded="true" signature="562:566" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/listening.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+        <state relative-caret-position="523">
+          <caret line="108" column="9" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
-            <marker date="1548095042252" expanded="true" signature="448:449" ph="..." />
+            <marker date="1548334838403" expanded="true" signature="448:449" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/venv/lib/python3.7/site-packages/setuptools-39.1.0-py3.7.egg!/easy_install.py">
+    <entry file="file://$PROJECT_DIR$/Assistant_responses.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="2118">
+          <caret line="145" column="42" selection-start-line="145" selection-start-column="42" selection-end-line="145" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+            <marker date="1548334838396" expanded="true" signature="839:1012" ph="..." />
+            <marker date="1548334838396" expanded="true" signature="935:1012" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
