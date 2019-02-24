@@ -6,6 +6,7 @@ from threading import Thread
 from pygame import mixer
 import webbrowser
 from listening import Listening
+import os
 import sys
 import text_manipulation
 
@@ -22,6 +23,16 @@ GOOGLE_CLOUD_CRED = service_account.Credentials.from_service_account_file(
 voice = texttospeech.types.cloud_tts_pb2.VoiceSelectionParams(
     language_code='en-GB',
     ssml_gender=texttospeech.enums.SsmlVoiceGender.MALE,
+)
+
+
+# Create The text-to-speech client with the required credentials
+client = texttospeech.TextToSpeechClient(credentials=GOOGLE_CLOUD_CRED)
+
+
+# setup the configuration of the audio file
+audio_config = texttospeech.types.cloud_tts_pb2.AudioConfig(
+    audio_encoding=texttospeech.enums.AudioEncoding.MP3
 )
 
 
@@ -47,18 +58,10 @@ def alert():
 
 
 def speak(self):
-
     response_text = self
-    # Create The text-to-speech client with the required credentials
-    client = texttospeech.TextToSpeechClient(credentials=GOOGLE_CLOUD_CRED)
 
     # Set the text to be said
     input_response = texttospeech.types.cloud_tts_pb2.SynthesisInput(text=response_text)
-
-    # setup the configuration of the audio file
-    audio_config = texttospeech.types.cloud_tts_pb2.AudioConfig(
-        audio_encoding=texttospeech.enums.AudioEncoding.MP3
-    )
 
     # Conduct the text-to-speech request on the specified text response
     response = client.synthesize_speech(input_response, voice, audio_config)
@@ -74,6 +77,7 @@ def speak(self):
     mixer.music.load('response.mp3')
     print("Responding")
     mixer.music.play()
+    mixer.quit()
 
 
 """ Method to deal with the speech recognition """
@@ -108,10 +112,6 @@ def mirror_mirror(self):
     request = self
     found = False
     print(str(request))
-
-    logging_thread = Thread(target=Listening.logging, args=[request])
-    logging_thread.start()
-    logging_thread.join()
 
     # intents, objs = text_manipulation.remove_noise(request)
     # print(intents)
@@ -243,5 +243,14 @@ def mirror_mirror(self):
 
     else:
         found = False
+
+    if found:
+        logging_thread = Thread(target=Listening.logging, args=[request, found])
+        logging_thread.start()
+        logging_thread.join()
+    else:
+        logging_thread = Thread(target=Listening.logging, args=[request, found])
+        logging_thread.start()
+        logging_thread.join()
 
     return found

@@ -4,8 +4,8 @@ import datetime
 import pymongo
 import urllib.parse
 
-username = urllib.parse.quote_plus("jts996")
-password = urllib.parse.quote_plus("M@serati96!")
+username = urllib.parse.quote_plus("*****")
+password = urllib.parse.quote_plus("****")
 myClient = pymongo.MongoClient("mongodb+srv://%s:%s@smart-mirror-log-eo59t.azure.mongodb.net/test" 
                                "?retryWrites=true" % (username, password))
 mydb = myClient["mySmartMirror"]
@@ -116,10 +116,18 @@ class Listening(threading.Thread):
     # I am using a Mongodb to store the JSON objects
 
     @staticmethod
-    def logging(request):
+    def logging(request, found):
+        print("Logging request")
 
         date = datetime.datetime.now()
 
-        log = {"request": request, "date": date}
+        if found:
 
-        myCol.insert_one(log)
+            log = {"request": request, "date": date}
+
+            myCol.insert_one(log)
+        else:
+
+            log = {"request": request, "date": date, "new_request": 1}
+
+            myCol.insert_one(log)
