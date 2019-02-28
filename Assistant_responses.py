@@ -1,11 +1,10 @@
 from google.cloud import texttospeech
 from google.oauth2 import service_account
-import speech_recognition as sr
 import time
 from threading import Thread
 from pygame import mixer
 import webbrowser
-from listening import Listening
+from Logs import Logging
 import os
 import sys
 import text_manipulation
@@ -19,47 +18,46 @@ GOOGLE_CLOUD_CRED = service_account.Credentials.from_service_account_file(
     '/Users/james/Documents/Fourth Year/Project Module/api-key-speech-recognition.json')
 
 
-# Setup the voice of the assistant
-voice = texttospeech.types.cloud_tts_pb2.VoiceSelectionParams(
-    language_code='en-GB',
-    ssml_gender=texttospeech.enums.SsmlVoiceGender.MALE,
-)
-
-
-# Create The text-to-speech client with the required credentials
-client = texttospeech.TextToSpeechClient(credentials=GOOGLE_CLOUD_CRED)
-
-
-# setup the configuration of the audio file
-audio_config = texttospeech.types.cloud_tts_pb2.AudioConfig(
-    audio_encoding=texttospeech.enums.AudioEncoding.MP3
-)
-
-
+# Tone to provide feedback to user that the device is ready for their request
 def start():
     mixer.init()
     mixer.music.load("Start_tone.mp3")
     mixer.music.play()
 
 
+# Tone to provide feedback to user that the device has finished the interaction
 def end():
     mixer.init()
     mixer.music.load("Closing_tone.mp3")
     mixer.music.play()
 
 
+# Tone to alert the user to that their timer has finished
 def alert():
     mixer.init()
     mixer.music.load('alarm.mp3')
     mixer.music.play()
 
 
-""" Method to deal with turning the text response into an audio file for the user feedback """
-
-
+# Method to deal with turning the text response into an audio file for the user feedback
 def speak(self):
     response_text = self
 
+    print("Speaking")
+
+    # Setup the voice of the assistant
+    voice = texttospeech.types.cloud_tts_pb2.VoiceSelectionParams(
+        language_code='en-GB',
+        ssml_gender=texttospeech.enums.SsmlVoiceGender.MALE,
+    )
+
+    # Create The text-to-speech client with the required credentials
+    client = texttospeech.TextToSpeechClient(credentials=GOOGLE_CLOUD_CRED)
+
+    # setup the configuration of the audio file
+    audio_config = texttospeech.types.cloud_tts_pb2.AudioConfig(
+        audio_encoding=texttospeech.enums.AudioEncoding.MP3
+    )
     # Set the text to be said
     input_response = texttospeech.types.cloud_tts_pb2.SynthesisInput(text=response_text)
 
@@ -77,33 +75,12 @@ def speak(self):
     mixer.music.load('response.mp3')
     print("Responding")
     mixer.music.play()
+    time.sleep(5)
+    os.remove("response.mp3")
     mixer.quit()
 
 
-""" Method to deal with the speech recognition """
-
-
-def record_audio():
-    r = sr.Recognizer()
-
-    try:
-        with sr.Microphone() as source:
-            print("Listening to user")
-            data = r.recognize_google(r.listen(source))
-            # print("Data in record_audio: " + str(data))
-    except sr.UnknownValueError:
-        # speak("I'm Sorry, i couldn't understand that")
-        return None
-    except sr.RequestError as e:
-        # speak("Could not request results from Google Speech Recognition service; {0}".format(e))
-        return None
-
-    return data
-
-
-""" Method to deal with finding and deciding what to do with the users request """
-
-
+# Method to deal with finding and deciding what to do with the users request
 def mirror_mirror(self):
 
     print("-------------------------------------------------")
@@ -112,6 +89,7 @@ def mirror_mirror(self):
     request = self
     found = False
     print(str(request))
+
 
     # intents, objs = text_manipulation.remove_noise(request)
     # print(intents)
@@ -244,13 +222,6 @@ def mirror_mirror(self):
     else:
         found = False
 
-    if found:
-        logging_thread = Thread(target=Listening.logging, args=[request, found])
-        logging_thread.start()
-        logging_thread.join()
-    else:
-        logging_thread = Thread(target=Listening.logging, args=[request, found])
-        logging_thread.start()
-        logging_thread.join()
-
+    print("-------------------------------------------------")
+    Logging.log(request, found)
     return found

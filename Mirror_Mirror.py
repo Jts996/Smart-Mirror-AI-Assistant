@@ -11,7 +11,6 @@ screen_height = app.winfo_screenheight()
 
 # This class deals with initiating everything for the application GUI and starting the
 # assistant thread
-#
 class Application:
 
     # This function deals with starting the GUI
@@ -104,7 +103,10 @@ class ImageLabel(tk.Label):
 
 if __name__ == '__main__':
     # Start the thread that deals with the users voice interactions
+    print("-------------------------------------------------")
+    print("Assistant starting")
     Application.start_assistant_thread()
 
     # Open the application GUI
+    print("GUI Opening")
     Application.open_window()

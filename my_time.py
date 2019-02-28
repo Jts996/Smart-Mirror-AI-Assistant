@@ -5,8 +5,9 @@ import datetime
 
 class Times:
 
+    # Function which provides the response of the current time when the user requests
     @staticmethod
-    def current_time(loc):
+    def current_time():
         t = time.localtime(time.time())
         hour = t[3]
         minute = t[4]
@@ -42,6 +43,7 @@ class Times:
 
         return current_t
 
+    # Function which provides the response of the current date when the user requests
     @staticmethod
     def current_date():
 
@@ -52,12 +54,16 @@ class Times:
         return current_d
 
 
+# Class for containing the different timer functions
 class Timer(threading.Thread):
 
+    # Function for dealing with creating a basic timer
     @staticmethod
     def tim(seconds):
         print("Starting timer")
         from Assistant_responses import alert
+        # the timer is a sleep for the specified length of time
         time.sleep(seconds)
         print("Timer has finished")
+        # Make alert the user to the timer finishing
         alert()

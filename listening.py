@@ -1,21 +1,36 @@
 import threading
 import time
-import datetime
-import pymongo
-import urllib.parse
-
-username = urllib.parse.quote_plus("*****")
-password = urllib.parse.quote_plus("****")
-myClient = pymongo.MongoClient("mongodb+srv://%s:%s@smart-mirror-log-eo59t.azure.mongodb.net/test" 
-                               "?retryWrites=true" % (username, password))
-mydb = myClient["mySmartMirror"]
-myCol = mydb["request_log"]
+import speech_recognition as sr
 
 
 class Listening(threading.Thread):
 
     def run(self):
+        print("-------------------------------------------------")
         print("Listening for request")
+        print("-------------------------------------------------")
+
+    # Method to deal with the speech recognition
+    @staticmethod
+    def record_audio():
+        r = sr.Recognizer()
+
+        try:
+            with sr.Microphone() as source:
+                print("-------------------------------------------------")
+                print("Listening to user")
+                print("-------------------------------------------------")
+                r.adjust_for_ambient_noise(source)
+                data = r.recognize_google(r.listen(source))
+                # print("Data in record_audio: " + str(data))
+        except sr.UnknownValueError:
+            # speak("I'm Sorry, i couldn't understand that")
+            return None
+        except sr.RequestError as e:
+            # speak("Could not request results from Google Speech Recognition service; {0}".format(e))
+            return None
+
+        return data
 
     # function which handles the listening for the wake word
     #
@@ -23,18 +38,19 @@ class Listening(threading.Thread):
     # Once this is done the "heard" function is initiated (See heard function for details)
     @staticmethod
     def wake_word_detection():
-        from Assistant_responses import start, record_audio
+        from Assistant_responses import start
 
         waiting = True
         print("-------------------------------------------------")
         print("Wake word detection initiated")
         while waiting:
             print("Waiting for wake word")
-            wake_word = record_audio()
+            wake_word = Listening.record_audio()
             print("Checking wake word")
             # print(str(wake_word))
             if wake_word == "hello":
                 print("Said")
+                print("-------------------------------------------------")
                 start()
                 Listening.heard()
                 waiting = False
@@ -51,7 +67,7 @@ class Listening(threading.Thread):
     # for the wake word
     @staticmethod
     def heard():
-        from Assistant_responses import mirror_mirror, end, speak, record_audio
+        from Assistant_responses import mirror_mirror, end, speak
 
         request_not_received = True
         print("-------------------------------------------------")
@@ -65,7 +81,7 @@ class Listening(threading.Thread):
         while request_not_received:
             print("recording request")
             print("Try number: " + str(tries))
-            data = record_audio()
+            data = Listening.record_audio()
 
             if data is not None:
 
@@ -73,10 +89,6 @@ class Listening(threading.Thread):
                 print("Finding response to user request")
                 found = mirror_mirror(data)
 
-                # Sleep to wait on the return of the find response to the user and to respond
-                #  Then continue on
-                print("5 second sleep")
-                time.sleep(5)
                 if found:
                     request_not_received = False
                 else:
@@ -85,9 +97,13 @@ class Listening(threading.Thread):
                     # Try up too receive user input and/or find the response up to limited number
                     # If it reaches this limit, reset back to wake_word_detection
                     else:
-                        speak("Sorry, I could not find that, Please try again")
+                        speak("Sorry, I could not find that, would you like to try again?")
+                        data = Listening.record_audio()
                         time.sleep(3.7)
-                        tries += 1
+                        if data == "yes":
+                            tries += 1
+                        else:
+                            tries = tries_limit
             else:
                 if tries == tries_limit:
                     break
@@ -95,11 +111,11 @@ class Listening(threading.Thread):
 
         if tries == tries_limit and request_not_received:
             speak("Sorry I can't help you with that! Try again later")
-            time.sleep(3.7)
+            time.sleep(4)
         else:
             print("User request has been dealt with, now back to waiting for wake word")
-        time.sleep(2)
         print("Restarting, going back to wait for wake word")
+        print("-------------------------------------------------")
         end()
         Listening.wake_word_detection()
 
@@ -112,22 +128,5 @@ class Listening(threading.Thread):
          #   speak("Ok, What else would you like help with?")
           #  Listening.heard()
 
-    # Function which takes care of storing the user requests to the log
-    # I am using a Mongodb to store the JSON objects
 
-    @staticmethod
-    def logging(request, found):
-        print("Logging request")
 
-        date = datetime.datetime.now()
-
-        if found:
-
-            log = {"request": request, "date": date}
-
-            myCol.insert_one(log)
-        else:
-
-            log = {"request": request, "date": date, "new_request": 1}
-
-            myCol.insert_one(log)
