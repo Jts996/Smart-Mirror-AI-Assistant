@@ -16,6 +16,7 @@ class Listening(threading.Thread):
     @staticmethod
     def record_audio():
         r = sr.Recognizer()
+        r.dynamic_energy_threshold = True
 
         try:
             with sr.Microphone() as source:

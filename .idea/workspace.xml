@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e873c8ef-f4fb-4f7c-a115-7dd5d7f9c3be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assistant_responses.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assistant_responses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mirror_Mirror.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror_Mirror.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/listening.py" beforeDir="false" afterPath="$PROJECT_DIR$/listening.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_time.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_weather.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_weather.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text_manipulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/text_manipulation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,14 +20,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mirror_Mirror.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+            <state relative-caret-position="715">
+              <caret line="114" column="4" lean-forward="true" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
               <folding>
-                <marker date="1551358387273" expanded="true" signature="485:489" ph="..." />
+                <marker date="1551359148256" expanded="true" signature="485:489" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/listening.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -64,12 +66,12 @@
         <option value="$PROJECT_DIR$/Feedback_sounds.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Logs.py" />
-        <option value="$PROJECT_DIR$/listening.py" />
         <option value="$PROJECT_DIR$/my_time.py" />
         <option value="$PROJECT_DIR$/Assistant_responses.py" />
         <option value="$PROJECT_DIR$/text_manipulation.py" />
         <option value="$PROJECT_DIR$/my_weather.py" />
         <option value="$PROJECT_DIR$/Mirror_Mirror.py" />
+        <option value="$PROJECT_DIR$/listening.py" />
       </list>
     </option>
   </component>
@@ -246,7 +248,7 @@
       <updated>1541169688447</updated>
       <workItem from="1551218368852" duration="589000" />
       <workItem from="1551295846527" duration="2884000" />
-      <workItem from="1551358024427" duration="236000" />
+      <workItem from="1551358024427" duration="1150000" />
     </task>
     <task id="LOCAL-00001" summary="Voice recognition work!! Need to work on speed">
       <created>1541877287644</created>
@@ -325,11 +327,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551355168564</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Code adjustments in Mirror_mirror file">
+      <created>1551358447795</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1551358447795</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3709000" />
+    <option name="totallyTimeSpent" value="4623000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -344,7 +353,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49759036" visible="true" weight="0.26323318" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49759036" visible="true" weight="0.26323318" />
       <window_info id="Structure" order="1" sideWeight="0.50240964" side_tool="true" weight="0.25250357" />
       <window_info id="Favorites" order="2" sideWeight="0.5030581" side_tool="true" weight="0.25250357" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -357,9 +366,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" sideWeight="0.49928468" weight="0.32891566" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50214595" side_tool="true" visible="true" weight="0.21204819" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49785408" visible="true" weight="0.21204819" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.6888412" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.31330472" side_tool="true" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49713877" weight="0.21204819" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.6866953" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -385,7 +394,8 @@
     <MESSAGE value="edited requirements.txt file of dependencies" />
     <MESSAGE value="Edits" />
     <MESSAGE value="Logs are working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logs are working" />
+    <MESSAGE value="Code adjustments in Mirror_mirror file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code adjustments in Mirror_mirror file" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pyaudio.py">
@@ -573,16 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/listening.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -612,11 +612,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Mirror_Mirror.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        <state relative-caret-position="715">
+          <caret line="114" column="4" lean-forward="true" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
           <folding>
-            <marker date="1551358387273" expanded="true" signature="485:489" ph="..." />
+            <marker date="1551359148256" expanded="true" signature="485:489" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listening.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
         </state>
       </provider>
     </entry>
