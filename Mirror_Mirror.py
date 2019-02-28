@@ -1,12 +1,12 @@
+#!/usr/bin/python3
+
 import tkinter as tk
 import time
 from threading import Thread
 from PIL import Image, ImageTk
 from itertools import count, cycle
 
-app = tk.Tk()
-screen_width = app.winfo_screenwidth()
-screen_height = app.winfo_screenheight()
+
 
 
 # This class deals with initiating everything for the application GUI and starting the
@@ -19,6 +19,9 @@ class Application:
     # It also defines the Label and it parameters for the UI GIF to be contained
     @staticmethod
     def open_window():
+        app = tk.Tk()
+        screen_width = app.winfo_screenwidth()
+        screen_height = app.winfo_screenheight()
 
         app.geometry(str(screen_width) + 'x' + str(screen_height))
         app.configure(background='black')

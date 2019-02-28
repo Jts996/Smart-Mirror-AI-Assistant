@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import datetime
 import pymongo
 import urllib.parse

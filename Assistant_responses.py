@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from google.cloud import texttospeech
 from google.oauth2 import service_account
 import time
