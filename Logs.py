@@ -8,7 +8,7 @@ print("-------------------------------------------------")
 print("Setting up Log database connection")
 print("-------------------------------------------------")
 username = urllib.parse.quote_plus("jts996")
-password = urllib.parse.quote_plus("M@serati96!")
+password = urllib.parse.quote_plus("****")
 myClient = pymongo.MongoClient(
     'mongodb+srv://jts996:%s@log-3kku0.mongodb.net/test?retryWrites=true' % password)
 mydb = myClient["Logs"]

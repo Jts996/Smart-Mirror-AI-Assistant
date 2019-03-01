@@ -9,7 +9,7 @@ owm_api_key = "7efd54737b3e8f9e8f8567014b77a354"
 owm = OWM(owm_api_key)
 
 username = urllib.parse.quote_plus("jts996")
-password = urllib.parse.quote_plus("M@serati96!")
+password = urllib.parse.quote_plus("*****")
 myClient = pymongo.MongoClient(
     'mongodb+srv://%s:%s@log-3kku0.mongodb.net/test?retryWrites=true' % (username, password))
 mydb = myClient["Locations"]
