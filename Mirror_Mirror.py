@@ -7,8 +7,6 @@ from PIL import Image, ImageTk
 from itertools import count, cycle
 
 
-
-
 # This class deals with initiating everything for the application GUI and starting the
 # assistant thread
 class Application:

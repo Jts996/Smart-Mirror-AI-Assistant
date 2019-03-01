@@ -77,7 +77,7 @@ def speak(self):
     mixer.music.load('response.mp3')
     print("Responding")
     mixer.music.play()
-    time.sleep(5)
+    time.sleep(10)
     os.remove("response.mp3")
     mixer.quit()
 
@@ -91,7 +91,6 @@ def mirror_mirror(self):
     request = self
     found = False
     print(str(request))
-
 
     # intents, objs = text_manipulation.remove_noise(request)
     # print(intents)
@@ -137,7 +136,7 @@ def mirror_mirror(self):
             from my_weather import MyWeather
             print("here")
             data = self.split(" ")
-            location = data[len(data)]
+            location = data[len(data)-1]
             response = MyWeather.current_weather(location)
             speak(response)
             found = True

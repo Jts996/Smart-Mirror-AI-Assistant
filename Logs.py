@@ -5,10 +5,10 @@ import pymongo
 import urllib.parse
 
 print("-------------------------------------------------")
-print("Setting up database connection")
+print("Setting up Log database connection")
 print("-------------------------------------------------")
 username = urllib.parse.quote_plus("jts996")
-password = urllib.parse.quote_plus("*******")
+password = urllib.parse.quote_plus("M@serati96!")
 myClient = pymongo.MongoClient(
     'mongodb+srv://jts996:%s@log-3kku0.mongodb.net/test?retryWrites=true' % password)
 mydb = myClient["Logs"]

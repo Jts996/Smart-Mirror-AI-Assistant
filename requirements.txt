@@ -12,3 +12,5 @@ googleapis-common-protos==1.5.6
 Pillow==5.4.1
 dnspython==1.16.0
 dnspython3==1.15.0
+grpcio==1.19.0
+pyowm==2.10.0
