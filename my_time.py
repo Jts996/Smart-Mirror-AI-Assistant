@@ -3,6 +3,7 @@
 import threading
 import time
 import datetime
+import sys
 
 
 class Times:
@@ -69,3 +70,6 @@ class Timer(threading.Thread):
         print("Timer has finished")
         # Make alert the user to the timer finishing
         alert()
+        alert()
+        print("Closing timer thread")
+        return 1

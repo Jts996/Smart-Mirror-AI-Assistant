@@ -4,10 +4,16 @@ from pyowm import OWM
 import pymongo
 import urllib.parse
 
+print("-------------------------------------------------")
+print("Setting up Forecast API connection")
+print("-------------------------------------------------")
 owm_api_key = "7efd54737b3e8f9e8f8567014b77a354"
 
 owm = OWM(owm_api_key)
 
+print("-------------------------------------------------")
+print("Setting up Weather database connection")
+print("-------------------------------------------------")
 username = urllib.parse.quote_plus("jts996")
 password = urllib.parse.quote_plus("*****")
 myClient = pymongo.MongoClient(

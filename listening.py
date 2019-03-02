@@ -51,12 +51,11 @@ class Listening(threading.Thread):
             wake_word = Listening.record_audio()
             print("Checking wake word")
             # print(str(wake_word))
-            if wake_word == "hello":
+            if wake_word == "mirror mirror":
                 print("Said")
                 print("-------------------------------------------------")
                 start()
                 Listening.heard()
-                waiting = False
 
     # Function to deal with the user request
     # Tries 5 times to record and find the best response, after this it will revert back to

@@ -12,6 +12,7 @@ import sys
 import text_manipulation
 
 
+
 # To track how many interactions the user has had with the system
 interactions = 0
 
@@ -42,7 +43,7 @@ def alert():
 
 
 # Method to deal with turning the text response into an audio file for the user feedback
-def speak(self):
+def speak(self, weather):
     response_text = self
 
     print("Speaking")
@@ -77,7 +78,10 @@ def speak(self):
     mixer.music.load('response.mp3')
     print("Responding")
     mixer.music.play()
-    time.sleep(10)
+    if weather:
+        time.sleep(10)
+    else:
+        time.sleep(5)
     os.remove("response.mp3")
     mixer.quit()
 
@@ -92,132 +96,107 @@ def mirror_mirror(self):
     found = False
     print(str(request))
 
-    # intents, objs = text_manipulation.remove_noise(request)
-    # print(intents)
-    # print(objs)
+    objects, intents = text_manipulation.request_processing(request)
+    print(intents)
+    print(objects)
 
-    # Path to chrome browser in MacOS
-    chrome_path = 'open -a /Applications/Google\ Chrome.app %s'
-
-    if "what is your name" in request:
-        response = "You can call me, Mirror, Mirror"
-        speak(response)
-        found = True
-
-    elif "where do you live" in request:
-
-        response = "In your heart."
-        speak(response)
-        found = True
-
-    elif "how" in request:
-
-        response = "I am fine, thank you"
-        speak(response)
-        found = True
-
-    elif "what" in request:
+    if "what" in intents:
 
         from my_time import Times
 
-        if "time" in request:
+        if "time" in objects:
 
             response = Times.current_time()
-            speak(response)
+            speak(response, False)
             found = True
 
-        elif "date" in request:
+        elif "date" in objects:
 
             response = Times.current_date()
-            speak(response)
+            speak(response, False)
             found = True
 
-        elif "weather" in request:
+        elif "weather" in objects:
             from my_weather import MyWeather
-            print("here")
-            data = self.split(" ")
-            location = data[len(data)-1]
+            if len(objects) > 2:
+                date = objects[len(objects) - 1]
+                location = objects[len(objects) - 2]
+            else:
+                location = objects(len(objects) - 1)
             response = MyWeather.current_weather(location)
-            speak(response)
+            speak(response, True)
             found = True
 
-    elif "start" in request:
-        print("In here")
-        print(str(len(request)))
+        else:
+            response = "You can call me, Mirror, Mirror"
+            speak(response, False)
+            found = True
+
+    elif "where" in intents:
+
+        response = "In your heart."
+        speak(response, False)
+        found = True
+
+    elif "how" in intents:
+
+        response = "I am fine, thank you"
+        speak(response, False)
+        found = True
+
+    elif "start" or "set" in intents:
         from my_time import Timer
 
-        if "timer" in request:
+        if "timer" in objects:
             print("Timer initialisation")
             word = 0
 
             # If user specifies a time in minutes, we need to convert this to seconds
             # This is because the timer is implemented as a sleep which only takes seconds as
             # its parameters
-            if "minutes" in request:
-                position = request.index("minutes")
+            if "minut" in objects:
+
                 print("Converting minutes")
+
                 # extracting the time number from the char list
-                t = int(request[position-2])
-                print(str(t))
+                t = int(objects[len(objects) - 2])
+
                 response = "Starting a timer for " + str(t) + " minutes"
-                speak(response)
+                speak(response, False)
+
                 # Converting the time in minutes to seconds
                 sec = t * 60
+
                 # Starts a new thread so that the timer can run in the background, and not disrupt the
                 # rest of the application
                 thread_timer = Thread(target=Timer.tim,
                                       args=[sec])
                 thread_timer.start()
-                print("Timer Thread is exiting and rejoining the main listening thread")
-                # Makes sure the thread is terminated as to not waste resources
-                thread_timer.join()
 
             # If time is specified in seconds already, no need to do the conversion
-            elif "seconds" in request:
-                position = request.index("seconds")
-                print(str(position))
-                print("seconds")
+            elif "second" in objects:
                 # extracting the time number from the char list
-                sec = int(request[position - 2])
+                sec = int(objects[len(objects) - 2])
+
                 response = "Starting a timer for " + str(sec) + " seconds"
-                speak(response)
+                speak(response, False)
+
                 # Starts a new thread so that the timer can run in the background, and not disrupt the
                 # rest of the application
                 thread_timer = Thread(target=Timer.tim,
                                       args=[sec])
                 thread_timer.start()
-                print("Timer Thread is exiting and rejoining the main listening thread")
-                # Makes sure the thread is terminated as to not waste resources
-                thread_timer.join()
+
             else:
                 word += 1
         found = True
-        return found
 
     # NEED TO FIX: DOES NOT WORK
     elif "who" in request:
         data = self.split(" ")
         name = data[2]
         response = "Hold on, I'm finding information about " + name
-        speak(response)
-        found = True
-
-    elif "where" in request:  # Close screen option
-        data = self.split(" ")
-        location = data[2]
-        response = "Hold on, here is what I have found for you"
-        speak(response)
-        url = "https://www.google.nl/maps/place/" + location + "/&amp;"
-        webbrowser.get(chrome_path).open(url)
-        found = True
-
-    elif "open" in request:
-        data = self.split(" ")
-        application = data[1]
-        response = "Hold on, here is what I have found for you"
-        speak(response)
-        url = "https://www." + application + ".com"
-        webbrowser.get(chrome_path).open(url)
+        speak(response, False)
         found = True
 
     else:
