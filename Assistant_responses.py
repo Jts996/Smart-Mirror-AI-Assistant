@@ -119,7 +119,7 @@ def mirror_mirror(self):
         elif "weather" in objects:
             from my_weather import MyWeather
             if len(objects) > 2:
-                date = objects[len(objects) - 1]
+                # date = objects[len(objects) - 1]
                 location = objects[len(objects) - 2]
             else:
                 location = objects(len(objects) - 1)

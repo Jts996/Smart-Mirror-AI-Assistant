@@ -33,7 +33,7 @@ class Times:
             # Before half past changes to "past" the previous hour
         else:
             # Afternoon
-            if hour > 12:
+            if  12 < hour < 17:
                 hour = hour - 12
                 current_t = "It is " + str(minute) + " minutes past " + str(hour) + " in the afternoon"
             # Evening
