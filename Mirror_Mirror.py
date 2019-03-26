@@ -2,7 +2,7 @@
 
 import tkinter as tk
 import time
-from multiprocessing import Process
+from threading import Thread
 from PIL import Image, ImageTk
 from itertools import count, cycle
 
@@ -46,11 +46,11 @@ class Application:
     #
     # See the functions for more details
     @staticmethod
-    def start_assistant_process():
+    def start_assistant_thread():
 
         from listening import Listening
 
-        thread_heard = Process(target=Listening.wake_word_detection)
+        thread_heard = Thread(target=Listening.wake_word_detection)
         thread_heard.start()
 
 
@@ -106,7 +106,7 @@ if __name__ == '__main__':
     # Start the thread that deals with the users voice interactions
     print("-------------------------------------------------")
     print("Assistant starting")
-    Application.start_assistant_process()
+    Application.start_assistant_thread()
 
     # Open the application GUI
     print("GUI Opening")

@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/Mirror_Mirror.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror_Mirror.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/listening.py" beforeDir="false" afterPath="$PROJECT_DIR$/listening.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_time.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_weather.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_weather.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +16,9 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Smart_Mirror_AI_Assistant$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1547069103355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Smart_Mirror_AI_Assistant$my_weather.coverage" NAME="my_weather Coverage Results" MODIFIED="1553611012753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Smart_Mirror_AI_Assistant$text_manipulation.coverage" NAME="text_manipulation Coverage Results" MODIFIED="1551542476098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Smart_Mirror_AI_Assistant$Smart_Mirror.coverage" NAME="Smart_Mirror Coverage Results" MODIFIED="1553611029124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -54,11 +55,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mirror_Mirror.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+            <state relative-caret-position="15">
+              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
               <folding>
-                <element signature="e#20#40#0" expanded="true" />
-                <marker date="1553609099929" expanded="true" signature="490:494" ph="..." />
+                <marker date="1553611174009" expanded="true" signature="483:487" ph="..." />
               </folding>
             </state>
           </provider>
@@ -76,15 +76,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assistant_responses.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="189" column="20" selection-start-line="189" selection-start-column="20" selection-end-line="189" selection-end-column="20" />
+            <state relative-caret-position="15">
+              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
               <folding>
-                <element signature="e#20#57#0" expanded="true" />
-                <marker date="1553609106100" expanded="true" signature="810:1041" ph="..." />
-                <marker date="1553609106100" expanded="true" signature="964:1041" ph="..." />
+                <marker date="1553611174004" expanded="true" signature="803:1034" ph="..." />
+                <marker date="1553611174004" expanded="true" signature="957:1034" ph="..." />
               </folding>
             </state>
           </provider>
@@ -93,24 +92,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/listening.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="e#21#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my_time.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#20#36#0" expanded="true" />
-                <marker date="1553264948351" expanded="true" signature="90:91" ph="..." />
-                <marker date="1553264948351" expanded="true" signature="90:200" ph="..." />
+                <marker date="1553611201830" expanded="true" signature="79:80" ph="..." />
+                <marker date="1553611201830" expanded="true" signature="79:189" ph="..." />
               </folding>
             </state>
           </provider>
@@ -165,11 +161,11 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/text_manipulation.py" />
         <option value="$PROJECT_DIR$/Logs.py" />
-        <option value="$PROJECT_DIR$/my_time.py" />
         <option value="$PROJECT_DIR$/my_weather.py" />
         <option value="$PROJECT_DIR$/listening.py" />
-        <option value="$PROJECT_DIR$/Mirror_Mirror.py" />
         <option value="$PROJECT_DIR$/Assistant_responses.py" />
+        <option value="$PROJECT_DIR$/Mirror_Mirror.py" />
+        <option value="$PROJECT_DIR$/my_time.py" />
       </list>
     </option>
   </component>
@@ -265,14 +261,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.my_weather">
+  <component name="RunManager" selected="Python.Smart_Mirror">
     <configuration name="Smart_Mirror" type="PythonConfigurationType" factoryName="Python">
       <module name="Smart-Mirror-AI-Assistant" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -379,7 +372,7 @@
       <workItem from="1551523633384" duration="6259000" />
       <workItem from="1552485601528" duration="191000" />
       <workItem from="1553171538049" duration="9559000" />
-      <workItem from="1553608858956" duration="246000" />
+      <workItem from="1553608858956" duration="1174000" />
     </task>
     <task id="LOCAL-00001" summary="Voice recognition work!! Need to work on speed">
       <created>1541877287644</created>
@@ -507,11 +500,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553264680534</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Moved from threads to processes">
+      <created>1553609122391</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1553609122391</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27306000" />
+    <option name="totallyTimeSpent" value="28234000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -572,7 +572,8 @@
     <MESSAGE value="Edits" />
     <MESSAGE value="Added a more comprehensive NLP Engine." />
     <MESSAGE value="Fixed bug in the time function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug in the time function" />
+    <MESSAGE value="Moved from threads to processes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved from threads to processes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pyaudio.py">
@@ -750,18 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-          <folding>
-            <element signature="e#20#36#0" expanded="true" />
-            <marker date="1553264948351" expanded="true" signature="90:91" ph="..." />
-            <marker date="1553264948351" expanded="true" signature="90:200" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my_weather.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -781,27 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/listening.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#21#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mirror_Mirror.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-          <folding>
-            <element signature="e#20#40#0" expanded="true" />
-            <marker date="1553609099929" expanded="true" signature="490:494" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text_manipulation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -815,12 +783,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assistant_responses.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="189" column="20" selection-start-line="189" selection-start-column="20" selection-end-line="189" selection-end-column="20" />
+        <state relative-caret-position="15">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
           <folding>
-            <element signature="e#20#57#0" expanded="true" />
-            <marker date="1553609106100" expanded="true" signature="810:1041" ph="..." />
-            <marker date="1553609106100" expanded="true" signature="964:1041" ph="..." />
+            <marker date="1553611174004" expanded="true" signature="803:1034" ph="..." />
+            <marker date="1553611174004" expanded="true" signature="957:1034" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mirror_Mirror.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding>
+            <marker date="1553611174009" expanded="true" signature="483:487" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listening.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#20#36#0" expanded="true" />
+            <marker date="1553611201830" expanded="true" signature="79:80" ph="..." />
+            <marker date="1553611201830" expanded="true" signature="79:189" ph="..." />
           </folding>
         </state>
       </provider>

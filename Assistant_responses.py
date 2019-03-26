@@ -3,7 +3,7 @@
 from google.cloud import texttospeech
 from google.oauth2 import service_account
 import time
-from multiprocessing import Process
+from threading import Thread
 from pygame import mixer
 import webbrowser
 from Logs import Logging
@@ -169,7 +169,8 @@ def mirror_mirror(self):
 
                 # Starts a new thread so that the timer can run in the background, and not disrupt the
                 # rest of the application
-                thread_timer = Process(target=Timer.tim, args=[sec])
+                thread_timer = Thread(target=Timer.tim,
+                                      args=[sec])
                 thread_timer.start()
 
             # If time is specified in seconds already, no need to do the conversion
@@ -182,11 +183,20 @@ def mirror_mirror(self):
 
                 # Starts a new thread so that the timer can run in the background, and not disrupt the
                 # rest of the application
-                thread_timer = Process(target=Timer.tim, args=[sec])
+                thread_timer = Thread(target=Timer.tim,
+                                      args=[sec])
                 thread_timer.start()
 
             else:
                 word += 1
+        found = True
+
+    # NEED TO FIX: DOES NOT WORK
+    elif "who" in request:
+        data = self.split(" ")
+        name = data[2]
+        response = "Hold on, I'm finding information about " + name
+        speak(response, False)
         found = True
 
     else:
