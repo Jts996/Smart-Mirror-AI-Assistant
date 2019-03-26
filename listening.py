@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 
-import threading
 import time
 import speech_recognition as sr
 
 
-class Listening(threading.Thread):
+class Listening:
 
     def run(self):
         print("-------------------------------------------------")

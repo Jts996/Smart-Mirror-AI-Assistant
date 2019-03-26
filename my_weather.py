@@ -15,13 +15,13 @@ print("-------------------------------------------------")
 print("Setting up Weather database connection")
 print("-------------------------------------------------")
 username = urllib.parse.quote_plus("jts996")
-password = urllib.parse.quote_plus("*****")
+password = urllib.parse.quote_plus("M@serati96!")
 myClient = pymongo.MongoClient(
     'mongodb+srv://%s:%s@log-3kku0.mongodb.net/test?retryWrites=true' % (username, password))
 mydb = myClient["Locations"]
 myCol = mydb["cities"]
 
-loc = "stirling"
+location = "Stirling"
 
 
 class MyWeather:
@@ -49,3 +49,5 @@ class MyWeather:
                     "Celsius and a low of %d Celsius" % (loc, forecast, current_temp, max_temp, min_temp))
         except:
             return "Sorry I can not find that location"
+
+MyWeather.current_weather(location)

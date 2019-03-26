@@ -20,12 +20,12 @@ class Times:
             minute = 60 - t[4]
             # Afternoon
             if 11 < hour < 17:
-                hour = hour - 11
+                hour = hour - 12
                 current_t = "It is " + str(minute) + " minutes too " + str(hour) + " in the afternoon"
 
             # Evening
             elif 17 <= hour < 24:
-                hour = hour - 11
+                hour = hour - 12
                 current_t = "It is " + str(minute) + " minutes too " + str(hour) + " in the evening"
             # Morning
             else:
@@ -33,13 +33,13 @@ class Times:
             # Before half past changes to "past" the previous hour
         else:
             # Afternoon
-            if 12 < hour < 17:
+            if 11 < hour < 17:
                 hour = hour - 12
                 current_t = "It is " + str(minute) + " minutes past " + str(hour) + " in the afternoon"
             # Evening
             elif 17 <= hour < 24:
                 hour = hour - 12
-                current_t =  "It is " + str(minute) + " minutes past " + str(hour) + " in the evening"
+                current_t = "It is " + str(minute) + " minutes past " + str(hour) + " in the evening"
             # Morning
             else:
                 current_t = "It is " + str(minute) + " minutes past " + str(hour) + " in the morning"
